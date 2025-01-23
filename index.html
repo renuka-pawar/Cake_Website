@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harmony Beats Music Classes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Hero Section -->
+  <header class="hero-section">
+    <div class="hero-overlay">
+      <h1>🎵 Harmony Beats</h1>
+      <p>Where Passion Meets Melody</p>
+      <button class="cta-button" onclick="scrollToSection('enroll')">Join Us Now</button>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="nav-bar">
+    <ul class="nav-menu">
+      <li><a href="#about">About</a></li>
+      <li><a href="#classes">Classes</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#enroll">Enroll</a></li>
+    </ul>
+  </nav>
+
+  <!-- About Section -->
+  <section id="about" class="section colorful-bg">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>
+        Welcome to Harmony Beats Music Classes! Our vibrant and inclusive environment is designed to help you discover the magic of music. Whether you're a beginner or an experienced musician, we offer personalized lessons to suit your needs.
+      </p>
+    </div>
+  </section>
+
+  <!-- Classes Section -->
+  <section id="classes" class="section">
+    <div class="container">
+      <h2>Our Classes</h2>
+      <div class="card-container">
+        <div class="card">
+          <img src="https://source.unsplash.com/300x200/?guitar,music" alt="Guitar Class">
+          <h3>🎸 Guitar</h3>
+          <p>Master chords, rhythm, and melodies with expert guidance.</p>
+        </div>
+        <div class="card">
+          <img src="https://source.unsplash.com/300x200/?piano,music" alt="Piano Class">
+          <h3>🎹 Piano</h3>
+          <p>Bring melodies to life with classical and modern techniques.</p>
+        </div>
+        <div class="card">
+          <img src="https://source.unsplash.com/300x200/?singing,microphone" alt="Vocals Class">
+          <h3>🎤 Vocals</h3>
+          <p>Refine your voice and discover your unique style with vocal training.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="section colorful-bg">
+    <div class="container">
+      <h2>Gallery</h2>
+      <div class="gallery-grid">
+        <img src="https://source.unsplash.com/300x300/?band,music" alt="Band Practice">
+        <img src="https://source.unsplash.com/300x300/?concert,music" alt="Concert">
+        <img src="https://source.unsplash.com/300x300/?music,class" alt="Music Class">
+        <img src="https://source.unsplash.com/300x300/?studio,music" alt="Music Studio">
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews Section -->
+  <section id="reviews" class="section">
+    <div class="container">
+      <h2>Student Reviews</h2>
+      <div class="review-container">
+        <div class="review-card">
+          <i class="fas fa-quote-left"></i>
+          <p>"The best place to learn music! The instructors are so patient and talented."</p>
+          <h4>- Alex</h4>
+        </div>
+        <div class="review-card">
+          <i class="fas fa-quote-left"></i>
+          <p>"Their piano lessons are world-class. I've grown so much in just a few months."</p>
+          <h4>- Maria</h4>
+        </div>
+        <div class="review-card">
+          <i class="fas fa-quote-left"></i>
+          <p>"My guitar skills have improved dramatically. Highly recommend Harmony Beats."</p>
+          <h4>- Jake</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Enroll Section -->
+  <section id="enroll" class="section">
+    <div class="container">
+      <h2>Enroll Now</h2>
+      <form id="enroll-form">
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+        <select id="class-select" name="class" required>
+          <option value="" disabled selected>Select a Class</option>
+          <option value="guitar">Guitar</option>
+          <option value="piano">Piano</option>
+          <option value="vocals">Vocals</option>
+        </select>
+        <button type="submit">Submit</button>
+      </form>
+      <p id="form-feedback"></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-section">
+    <p>&copy; 2024 Harmony Beats Music Classes. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
